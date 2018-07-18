@@ -5,7 +5,7 @@
 该项目主要利用Spring Boot的自动化配置特性来实现快速的将fastjon引入spring boot使用fastjson解析框架。
 
 - 源码地址
-  - GitHub：<a href="https://gitee.com/zhousiwei/fastjson-spring-boot-starter" target="_blank">https://gitee.com/zhousiwei/fastjson-spring-boot-starter</a>
+  - GitHub：<a href="https://github.com/JoeyBling/fastjson-spring-boot-starter" target="_blank">https://github.com/JoeyBling/fastjson-spring-boot-starter</a>
   - 码云：<a href="https://gitee.com/zhousiwei/fastjson-spring-boot-starter" target="_blank">https://gitee.com/zhousiwei/fastjson-spring-boot-starter</a>
 - 我的博客：<a href="https://zhousiwei.gitee.io/" target="_blank">https://zhousiwei.gitee.io/</a>
 
