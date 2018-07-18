@@ -6,7 +6,7 @@
 
     <groupId>io.gitee.zhousiwei</groupId>
     <artifactId>fastjson-spring-boot-starter</artifactId>
-    <version>6.6.6.RELEASE</version>
+    <version>8.8.8.RELEASE</version>
 
     <name>fastjson-spring-boot-starter</name>
     <url>https://zhousiwei.gitee.io/</url>

@@ -15,6 +15,7 @@ import java.lang.annotation.*;
 @Documented
 @Inherited
 @Import({FastJsonAutoConfiguration.class})
+@Deprecated
 public @interface EnableFastJson {
 
 }

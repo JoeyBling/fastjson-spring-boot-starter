@@ -31,6 +31,7 @@ public class FastJsonAutoConfiguration {
 
     @Bean
     public HttpMessageConverters fastJsonHttpMessageConverters(FastJsonProperties fastJsonProperties) {
+        System.err.println("starter for fastJson-----fastJson init success.");
         FastJsonHttpMessageConverter fastConverter = new FastJsonHttpMessageConverter();
         List<MediaType> supportedMediaTypes = new ArrayList<MediaType>();
         // 处理中文乱码问题
