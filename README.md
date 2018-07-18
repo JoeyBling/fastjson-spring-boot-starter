@@ -1,37 +1,67 @@
 # fastjson-spring-boot-starter
 
-#### 项目介绍
-自制spring boot starter for fastjson
+# 简介
 
-#### 软件架构
-软件架构说明
+该项目主要利用Spring Boot的自动化配置特性来实现快速的将fastjon引入spring boot使用fastjson解析框架。
+
+- 源码地址
+  - GitHub：<a href="https://gitee.com/zhousiwei/fastjson-spring-boot-starter" target="_blank">https://gitee.com/zhousiwei/fastjson-spring-boot-starter</a>
+  - 码云：<a href="https://gitee.com/zhousiwei/fastjson-spring-boot-starter" target="_blank">https://gitee.com/zhousiwei/fastjson-spring-boot-starter</a>
+- 我的博客：<a href="https://zhousiwei.gitee.io/" target="_blank">https://zhousiwei.gitee.io/</a>
+
+**小工具一枚，欢迎使用和Star支持，如使用过程中碰到问题，可以提出Issue，我会尽力完善该Starter**
+
+# 版本基础
+
+- Spring Boot：1.5.x
+- FastJson：1.2.15
+
+# 如何使用
+
+在该项目的帮助下，我们的Spring Boot可以轻松的引入fastjson，主需要做下面两个步骤：
+
+- 在`pom.xml`中引入依赖：
+
+> 当前最新版本 8.8.8.RELEASE
+
+```xml
+<dependency>
+	<groupId>io.gitee.zhousiwei</groupId>
+	<artifactId>fastjson-spring-boot-starter</artifactId>
+	<version>8.8.8.RELEASE</version>
+</dependency>
+```
+
+默认情况下就能在springboot项目中使用fastjson
+
+# 参数配置
+
+更细致的配置内容参考如下：
+
+## 配置示例
+
+```properties
+fastjson:
+          enabled: true
+          media-type: application/json;charset=UTF-8
+          date-format: yyyy-MM-dd HH:mm:ss
+```
+
+## 配置说明
+
+### 默认配置
+
+```properties
+- fastjson:
+          - enabled: true  是否启用fastjson(默认为:true)
+          - media-type: application/json;charset=UTF-8  媒体类型(默认为:application/json;charset=UTF-8)
+          - date-format: yyyy-MM-dd HH:mm:ss  日期格式(默认为:yyyy-MM-dd HH:mm:ss)
+```
 
 
-#### 安装教程
+> `8.8.8.RELEASE`新增：`date-format`属性，且配置成功会打印控制台信息:"starter for fastJson-----fastJson init success."
+>
 
-1. xxxx
-2. xxxx
-3. xxxx
+## 贡献者
 
-#### 使用说明
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 参与贡献
-
-1. Fork 本项目
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
-
-
-#### 码云特技
-
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [http://git.mydoc.io/](http://git.mydoc.io/)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+- <a href="https://gitee.com/zhousiwei/" target="_blank">思伟</a>
