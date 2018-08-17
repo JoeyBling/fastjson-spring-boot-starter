@@ -22,13 +22,25 @@
 
 - 在`pom.xml`中引入依赖：
 
-> 当前最新版本 8.8.8.RELEASE
+> 当前最新版本 9.9.9.RELEASE
+
+- 由于spring-boot-starter-parent版本更新问题 
+spring-boot-starter-parent 2.0.0.RELEASE之前使用
 
 ```xml
 <dependency>
 	<groupId>io.gitee.zhousiwei</groupId>
 	<artifactId>fastjson-spring-boot-starter</artifactId>
 	<version>8.8.8.RELEASE</version>
+</dependency>
+```
+- spring-boot-starter-parent 2.0.0.RELEASE之后使用
+
+```xml
+<dependency>
+	<groupId>io.gitee.zhousiwei</groupId>
+	<artifactId>fastjson-spring-boot-starter</artifactId>
+	<version>9.9.9.RELEASE</version>
 </dependency>
 ```
 
