@@ -8,7 +8,6 @@ import java.lang.annotation.*;
  * 开启FastJson
  *
  * @author 試毅-思伟
- * @Email 2434387555@qq.com
  */
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)

@@ -6,14 +6,14 @@
 
     <groupId>io.gitee.zhousiwei</groupId>
     <artifactId>fastjson-spring-boot-starter</artifactId>
-    <version>9.9.9.RELEASE</version>
+    <version>10.10.10.RELEASE</version>
 
     <name>fastjson-spring-boot-starter</name>
     <url>https://zhousiwei.gitee.io/</url>
     <description>starter for fastJson</description>
 
     <properties>
-        <version.java>1.7</version.java>
+        <version.java>1.8</version.java>
         <version.fastjson>1.2.15</version.fastjson>
         <version.spring-boot>2.0.0.RELEASE</version.spring-boot>
         <version.lombok>1.16.18</version.lombok>
@@ -76,9 +76,9 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.3</version>
                 <configuration>
-                    <encoding>${project.build.sourceEncoding}</encoding>
                     <source>${version.java}</source>
                     <target>${version.java}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
                     <showWarnings>true</showWarnings>
                 </configuration>
             </plugin>

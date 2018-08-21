@@ -5,10 +5,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.http.MediaType;
 
 /**
- * FastJsonp配置
+ * FastJson配置
  *
  * @author 試毅-思伟
- * @Email 2434387555@qq.com
  */
 @Data
 @ConfigurationProperties(FastJsonProperties.FASTJSON_PREFIX)

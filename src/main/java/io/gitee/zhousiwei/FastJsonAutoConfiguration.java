@@ -17,7 +17,6 @@ import java.util.List;
  * FastJson配置
  *
  * @author 試毅-思伟
- * @Email 2434387555@qq.com
  */
 @Configuration
 @ConditionalOnProperty(name = "fastjson.enabled", matchIfMissing = true)
