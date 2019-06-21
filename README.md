@@ -1,4 +1,10 @@
-﻿# fastjson-spring-boot-starter
+# 自制spring boot starter for fastjson
+
+> **GitHub：[https://github.com/JoeyBling/fastjson-spring-boot-starter](https://github.com/JoeyBling/fastjson-spring-boot-starter)**
+
+> **码云：[https://gitee.com/zhousiwei/fastjson-spring-boot-starter](https://gitee.com/zhousiwei/fastjson-spring-boot-starter)**
+
+> **欢迎使用和Star支持，如使用过程中碰到问题，可以提出Issue，我会尽力完善**
 
 # 简介
 
@@ -62,7 +68,6 @@ fastjson:
 ## 配置说明
 
 ### 默认配置
-
 ```properties
 fastjson:
           enabled: true  是否启用fastjson(默认为:true)
@@ -70,9 +75,8 @@ fastjson:
           date-format: yyyy-MM-dd HH:mm:ss  日期格式(默认为:yyyy-MM-dd HH:mm:ss)
 ```
 
-
 > `8.8.8.RELEASE`新增：`date-format`属性，且配置成功会打印控制台信息:"starter for fastJson-----fastJson init success."
 
 ## 贡献者
 
-- <a href="https://gitee.com/zhousiwei/" target="_blank">思伟</a>
+- <a href="https://github.com/JoeyBling" target="_blank">思伟</a>
