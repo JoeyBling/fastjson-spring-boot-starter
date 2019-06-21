@@ -42,7 +42,7 @@ spring-boot-starter-parent 2.0.0.RELEASE之前使用
 ```
 - spring-boot-starter-parent 2.0.0.RELEASE之后使用
 
-```xml
+```yml
 <dependency>
 	<groupId>io.gitee.zhousiwei</groupId>
 	<artifactId>fastjson-spring-boot-starter</artifactId>
@@ -58,7 +58,7 @@ spring-boot-starter-parent 2.0.0.RELEASE之前使用
 
 ## 配置示例
 
-```properties
+```yml
 fastjson:
           enabled: true
           media-type: application/json;charset=UTF-8
@@ -75,7 +75,7 @@ fastjson:
           date-format: yyyy-MM-dd HH:mm:ss  日期格式(默认为:yyyy-MM-dd HH:mm:ss)
 ```
 
-> `8.8.8.RELEASE`新增：`date-format`属性，且配置成功会打印控制台信息:"starter for fastJson-----fastJson init success."
+> `8.8.8.RELEASE`新增：`date-format`属性，且配置成功会打印控制台信息:`starter for fastJson-----fastJson init success.`
 
 ## 贡献者
 
