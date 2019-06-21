@@ -42,7 +42,7 @@ spring-boot-starter-parent 2.0.0.RELEASE之前使用
 ```
 - spring-boot-starter-parent 2.0.0.RELEASE之后使用
 
-```yml
+```xml
 <dependency>
 	<groupId>io.gitee.zhousiwei</groupId>
 	<artifactId>fastjson-spring-boot-starter</artifactId>
@@ -68,7 +68,7 @@ fastjson:
 ## 配置说明
 
 ### 默认配置
-```properties
+```yml
 fastjson:
           enabled: true  是否启用fastjson(默认为:true)
           media-type: application/json;charset=UTF-8  媒体类型(默认为:application/json;charset=UTF-8)
