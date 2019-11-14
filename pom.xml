@@ -7,6 +7,7 @@
     <groupId>io.gitee.zhousiwei</groupId>
     <artifactId>fastjson-spring-boot-starter</artifactId>
     <version>10.10.10.RELEASE</version>
+    <packaging>jar</packaging>
 
     <name>fastjson-spring-boot-starter</name>
     <url>https://zhousiwei.gitee.io/</url>
@@ -15,6 +16,7 @@
     <properties>
         <version.java>1.8</version.java>
         <version.fastjson>1.2.15</version.fastjson>
+        <!--<version.spring-boot>1.5.1.RELEASE</version.spring-boot>-->
         <version.spring-boot>2.0.0.RELEASE</version.spring-boot>
         <version.lombok>1.16.18</version.lombok>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -82,6 +84,22 @@
                     <showWarnings>true</showWarnings>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <attach>true</attach>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 
@@ -90,6 +108,7 @@
             <name>The Apache Software License, Version 2.0</name>
             <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
             <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
         </license>
     </licenses>
 
@@ -118,6 +137,7 @@
             </releases>
         </repository>
     </repositories>
+
     <pluginRepositories>
         <pluginRepository>
             <id>public</id>

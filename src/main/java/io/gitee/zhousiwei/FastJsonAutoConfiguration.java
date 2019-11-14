@@ -29,6 +29,7 @@ public class FastJsonAutoConfiguration {
     }
 
     @Bean
+    @ConditionalOnMissingBean
     public HttpMessageConverters fastJsonHttpMessageConverters(FastJsonProperties fastJsonProperties) {
         System.err.println("starter for fastJson-----fastJson init success.");
         FastJsonHttpMessageConverter fastConverter = new FastJsonHttpMessageConverter();
