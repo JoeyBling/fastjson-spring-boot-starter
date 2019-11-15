@@ -6,7 +6,7 @@
 
     <groupId>io.gitee.zhousiwei</groupId>
     <artifactId>fastjson-spring-boot-starter</artifactId>
-    <version>10.10.10.RELEASE</version>
+    <version>10.10.10-RELEASE</version>
     <packaging>jar</packaging>
 
     <name>fastjson-spring-boot-starter</name>
@@ -113,8 +113,8 @@
     </licenses>
 
     <scm>
-        <url>https://gitee.com/zhousiwei/fastjson-spring-boot-starter</url>
-        <connection>git@gitee.com:zhousiwei/fastjson-spring-boot-starter.git</connection>
+        <url>https://github.com/JoeyBling/fastjson-spring-boot-starter/</url>
+        <connection>git@github.com:JoeyBling/fastjson-spring-boot-starter.git</connection>
         <developerConnection>https://zhousiwei.gitee.io/</developerConnection>
     </scm>
 
@@ -151,5 +151,38 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
+
+    <!-- Apache Maven for use with GitHub Packages Start -->
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub OWNER Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/JoeyBling/fastjson-spring-boot-starter</url>
+        </repository>
+    </distributionManagement>
+
+    <profiles>
+        <profile>
+            <id>github</id>
+            <repositories>
+                <repository>
+                    <id>central</id>
+                    <url>https://repo1.maven.org/maven2</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </repository>
+                <repository>
+                    <id>github</id>
+                    <name>GitHub OWNER Apache Maven Packages</name>
+                    <url>https://maven.pkg.github.com/JoeyBling/</url>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
+    <!-- Apache Maven for use with GitHub Packages End -->
 
 </project>
