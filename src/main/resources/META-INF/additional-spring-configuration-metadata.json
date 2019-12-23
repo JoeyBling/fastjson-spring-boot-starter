@@ -1,0 +1,11 @@
+{
+  "properties": [
+    {
+      "sourceType": "io.gitee.zhousiwei.FastJsonAutoConfiguration",
+      "defaultValue": true,
+      "name": "fastjson.enabled",
+      "description": "是否启用FastJson自动化配置.",
+      "type": "java.lang.Boolean"
+    }
+  ]
+}

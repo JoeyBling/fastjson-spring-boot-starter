@@ -6,7 +6,7 @@
 
     <groupId>io.gitee.zhousiwei</groupId>
     <artifactId>fastjson-spring-boot-starter</artifactId>
-    <version>10.10.10-RELEASE</version>
+    <version>8.8.8.RELEASE</version>
     <packaging>jar</packaging>
 
     <name>fastjson-spring-boot-starter</name>
@@ -14,10 +14,11 @@
     <description>starter for fastJson</description>
 
     <properties>
-        <version.java>1.8</version.java>
+        <!--        <version.java>1.8</version.java>-->
+        <!--        <version.spring-boot>2.0.0.RELEASE</version.spring-boot>-->
+        <version.spring-boot>1.5.1.RELEASE</version.spring-boot>
+        <version.java>1.7</version.java>
         <version.fastjson>1.2.15</version.fastjson>
-        <!--<version.spring-boot>1.5.1.RELEASE</version.spring-boot>-->
-        <version.spring-boot>2.0.0.RELEASE</version.spring-boot>
         <version.lombok>1.16.18</version.lombok>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.locales>zh_CN</project.build.locales>

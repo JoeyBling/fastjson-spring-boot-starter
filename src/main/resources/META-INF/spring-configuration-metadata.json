@@ -1,0 +1,19 @@
+{
+  "hints": [
+  ],
+  "properties": [
+    {
+      "sourceType": "io.gitee.zhousiwei.FastJsonProperties",
+      "description": "媒体类型(默认为:application/json;charset=UTF-8).",
+      "name": "fastjson.media-type",
+      "defaultValue": "application/json;charset=UTF-8",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "io.gitee.zhousiwei.FastJsonProperties",
+      "description": "日期格式(默认为:yyyy-MM-dd HH:mm:ss).",
+      "name": "fastjson.date-format",
+      "type": "java.lang.String"
+    }
+  ]
+}
