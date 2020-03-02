@@ -48,7 +48,10 @@ public class FastJsonAutoConfiguration {
         fastConverter.setSupportedMediaTypes(supportedMediaTypes);
         FastJsonConfig fastJsonConfig = new FastJsonConfig();
         fastJsonConfig.setDateFormat(fastJsonProperties.getDateFormat());
-        fastJsonConfig.setSerializerFeatures(SerializerFeature.PrettyFormat);
+        // SerializerFeature.WriteEnumUsingToString 表示对enum使用toString进行输出，
+        // enum中对toString进行了重写，直接返回key
+        fastJsonConfig.setSerializerFeatures(SerializerFeature.PrettyFormat,
+                SerializerFeature.WriteMapNullValue, SerializerFeature.WriteEnumUsingToString);
         fastConverter.setFastJsonConfig(fastJsonConfig);
         return new HttpMessageConverters(fastConverter);
     }
