@@ -19,7 +19,7 @@ import java.util.List;
  * @author 試毅-思伟
  */
 @Configuration
-@ConditionalOnProperty(name = "fastjson.enabled", matchIfMissing = true)
+@ConditionalOnProperty(name = FastJsonProperties.FASTJSON_PREFIX + ".enabled", matchIfMissing = true)
 public class FastJsonAutoConfiguration {
 
     @Bean
@@ -28,6 +28,13 @@ public class FastJsonAutoConfiguration {
         return new FastJsonProperties();
     }
 
+    /**
+     * Fixme HttpMessageConverters由于spring-boot-starter-parent版本更新问题 2.0.0.RELEASE之后使用
+     * org.springframework.boot.autoconfigure.http.HttpMessageConverters
+     *
+     * @param fastJsonProperties
+     * @return
+     */
     @Bean
     @ConditionalOnMissingBean
     public HttpMessageConverters fastJsonHttpMessageConverters(FastJsonProperties fastJsonProperties) {

@@ -18,7 +18,9 @@
         <!--        <version.spring-boot>2.0.0.RELEASE</version.spring-boot>-->
         <version.spring-boot>1.5.1.RELEASE</version.spring-boot>
         <version.java>1.7</version.java>
-        <version.fastjson>1.2.15</version.fastjson>
+        <!--<version.fastjson>1.2.15</version.fastjson>-->
+        <!-- FastJson 1.2.60 以下版本 有重大漏洞 -->
+        <version.fastjson>1.2.60</version.fastjson>
         <version.lombok>1.16.18</version.lombok>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.locales>zh_CN</project.build.locales>
@@ -77,7 +79,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.3</version>
                 <configuration>
                     <source>${version.java}</source>
                     <target>${version.java}</target>
