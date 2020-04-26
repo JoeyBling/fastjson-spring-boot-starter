@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * FastJson自动化配置
  *
- * @author 試毅-思伟
+ * @author Created by 思伟 on 2019/4/26
  */
 @Configuration
 @ConditionalOnProperty(name = FastJsonProperties.FASTJSON_PREFIX + ".enabled", matchIfMissing = true)
@@ -38,7 +38,16 @@ public class FastJsonAutoConfiguration {
     @Bean
     @ConditionalOnMissingBean
     public HttpMessageConverters fastJsonHttpMessageConverters(FastJsonProperties fastJsonProperties) {
-        System.err.println("starter for fastJson-----fastJson init success.");
+        if (fastJsonProperties.isBanner()) {
+            // http://patorjk.com/software/taag/#p=display&f=Ogre&t=fastjson
+            System.out.println("  __           _    _                 ");
+            System.out.println(" / _| __ _ ___| |_ (_)___  ___  _ __  ");
+            System.out.println("| |_ / _` / __| __|| / __|/ _ \\| '_ \\ ");
+            System.out.println("|  _| (_| \\__ \\ |_ | \\__ \\ (_) | | | |");
+            System.out.println("|_|  \\__,_|___/\\__|/ |___/\\___/|_| |_|");
+            System.out.println("                 |__/               " + FastJsonVersion.getVersion());
+            // System.err.println("starter for fastJson-----fastJson init success.");
+        }
         FastJsonHttpMessageConverter fastConverter = new FastJsonHttpMessageConverter();
         List<MediaType> supportedMediaTypes = new ArrayList<MediaType>();
         // 处理中文乱码问题

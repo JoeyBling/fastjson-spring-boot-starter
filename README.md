@@ -8,14 +8,14 @@
 
 # 简介
 
-该项目主要利用Spring Boot的自动化配置特性来实现快速的将fastjon引入spring boot使用fastjson解析框架。
+该项目主要利用Spring Boot的自动化配置特性来实现快速的将fastjson引入spring boot使用fastjson解析框架。
 
 **小工具一枚，欢迎使用和Star支持，如使用过程中碰到问题，可以提出Issue，我会尽力完善该Starter**
 
 # 版本基础
 
 - Spring Boot：`1.5.x`
-- FastJson：`1.2.15`
+- FastJson：`1.2.60`
 
 # 如何使用
 

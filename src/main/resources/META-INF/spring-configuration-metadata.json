@@ -4,6 +4,13 @@
   "properties": [
     {
       "sourceType": "io.gitee.zhousiwei.FastJsonProperties",
+      "description": "是否开启 LOGO打印(默认为:true).",
+      "name": "fastjson.banner",
+      "defaultValue": true,
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "io.gitee.zhousiwei.FastJsonProperties",
       "description": "媒体类型(默认为:application/json;charset=UTF-8).",
       "name": "fastjson.media-type",
       "defaultValue": "application/json;charset=UTF-8",
