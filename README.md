@@ -66,10 +66,10 @@ fastjson:
 ### 默认配置
 ```yml
 fastjson:
-  enabled: true  是否启用fastjson(默认为:true)
-  banner: true
-  media-type: application/json;charset=UTF-8  媒体类型(默认为:application/json;charset=UTF-8)
-  date-format: yyyy-MM-dd HH:mm:ss  日期格式(默认为:yyyy-MM-dd HH:mm:ss)
+  enabled: true # 是否启用fastjson(默认为:true)
+  banner: true # 是否开启 LOGO
+  media-type: application/json;charset=UTF-8 # 媒体类型(默认为:application/json;charset=UTF-8)
+  date-format: yyyy-MM-dd HH:mm:ss # 日期格式(默认为:yyyy-MM-dd HH:mm:ss)
 ```
 
 > `8.8.8.RELEASE`新增：`date-format`属性，且配置成功会打印控制台信息:`starter for fastJson-----fastJson init success.`
