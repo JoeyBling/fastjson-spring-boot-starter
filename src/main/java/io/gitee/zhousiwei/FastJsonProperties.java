@@ -32,8 +32,9 @@ public class FastJsonProperties implements Serializable {
 
     /**
      * 媒体类型(默认为:application/json;charset=UTF-8)
+     * "type": "org.springframework.http.MediaType"
      */
-    private String[] mediaType = new String[]{MediaType.APPLICATION_JSON_UTF8_VALUE};
+    private MediaType[] mediaType = {MediaType.APPLICATION_JSON_UTF8};
 
     /**
      * 日期格式(默认为:yyyy-MM-dd HH:mm:ss)

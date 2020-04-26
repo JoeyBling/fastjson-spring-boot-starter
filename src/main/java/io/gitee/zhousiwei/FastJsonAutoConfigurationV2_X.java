@@ -16,13 +16,14 @@ import java.util.List;
 
 /**
  * FastJson自动化配置
+ * org.springframework.boot.autoconfigure.http.HttpMessageConverters;
  *
  * @author Created by 思伟 on 2019/4/26
  */
 @Configuration
 @ConditionalOnClass(HttpMessageConverters.class)
 @ConditionalOnProperty(name = FastJsonProperties.FASTJSON_PREFIX + ".enabled", matchIfMissing = true)
-public class FastJsonAutoConfiguration {
+public class FastJsonAutoConfigurationV2_X {
 
     @Bean
     @ConditionalOnMissingBean
@@ -53,8 +54,8 @@ public class FastJsonAutoConfiguration {
         FastJsonHttpMessageConverter fastConverter = new FastJsonHttpMessageConverter();
         List<MediaType> supportedMediaTypes = new ArrayList<MediaType>();
         // 处理中文乱码问题
-        for (String mediaType : fastJsonProperties.getMediaType()) {
-            supportedMediaTypes.add(MediaType.parseMediaType(mediaType));
+        for (MediaType mediaType : fastJsonProperties.getMediaType()) {
+            supportedMediaTypes.add(mediaType);
         }
         fastConverter.setSupportedMediaTypes(supportedMediaTypes);
         FastJsonConfig fastJsonConfig = new FastJsonConfig();

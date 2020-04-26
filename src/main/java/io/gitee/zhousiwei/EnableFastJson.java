@@ -13,7 +13,7 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @Inherited
-@Import({FastJsonAutoConfiguration.class})
+@Import({FastJsonAutoConfigurationV1_X.class})
 @Deprecated
 public @interface EnableFastJson {
 

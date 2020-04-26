@@ -1,3 +1,4 @@
 # Auto Configure
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-io.gitee.zhousiwei.FastJsonAutoConfiguration
+io.gitee.zhousiwei.FastJsonAutoConfigurationV1_X,\
+io.gitee.zhousiwei.FastJsonAutoConfigurationV2_X

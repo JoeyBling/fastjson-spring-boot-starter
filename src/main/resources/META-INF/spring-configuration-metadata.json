@@ -3,18 +3,27 @@
   ],
   "properties": [
     {
+      "sourceType": "io.gitee.zhousiwei.FastJsonAutoConfigurationV1_X",
+      "description": "是否启用FastJson自动化配置.",
+      "name": "fastjson.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": true
+    },
+    {
       "sourceType": "io.gitee.zhousiwei.FastJsonProperties",
       "description": "是否开启 LOGO打印(默认为:true).",
       "name": "fastjson.banner",
-      "defaultValue": true,
-      "type": "java.lang.Boolean"
+      "type": "java.lang.Boolean",
+      "defaultValue": true
     },
     {
       "sourceType": "io.gitee.zhousiwei.FastJsonProperties",
       "description": "媒体类型(默认为:application/json;charset=UTF-8).",
       "name": "fastjson.media-type",
-      "defaultValue": "application/json;charset=UTF-8",
-      "type": "java.lang.String[]"
+      "type": "org.springframework.http.MediaType[]",
+      "defaultValue": [
+        "application/json;charset=UTF-8"
+      ]
     },
     {
       "sourceType": "io.gitee.zhousiwei.FastJsonProperties",
