@@ -56,6 +56,7 @@
 ```yml
 fastjson:
   enabled: true
+  banner: true
   media-type: application/json;charset=UTF-8
   date-format: yyyy-MM-dd HH:mm:ss
 ```
@@ -66,6 +67,7 @@ fastjson:
 ```yml
 fastjson:
   enabled: true  是否启用fastjson(默认为:true)
+  banner: true
   media-type: application/json;charset=UTF-8  媒体类型(默认为:application/json;charset=UTF-8)
   date-format: yyyy-MM-dd HH:mm:ss  日期格式(默认为:yyyy-MM-dd HH:mm:ss)
 ```
