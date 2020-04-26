@@ -3,6 +3,7 @@ package io.gitee.zhousiwei;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.alibaba.fastjson.support.config.FastJsonConfig;
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.autoconfigure.web.HttpMessageConverters;
@@ -19,6 +20,7 @@ import java.util.List;
  * @author Created by 思伟 on 2019/4/26
  */
 @Configuration
+@ConditionalOnClass(HttpMessageConverters.class)
 @ConditionalOnProperty(name = FastJsonProperties.FASTJSON_PREFIX + ".enabled", matchIfMissing = true)
 public class FastJsonAutoConfiguration {
 
@@ -45,7 +47,7 @@ public class FastJsonAutoConfiguration {
             System.out.println("| |_ / _` / __| __|| / __|/ _ \\| '_ \\ ");
             System.out.println("|  _| (_| \\__ \\ |_ | \\__ \\ (_) | | | |");
             System.out.println("|_|  \\__,_|___/\\__|/ |___/\\___/|_| |_|");
-            System.out.println("                 |__/               " + FastJsonVersion.getVersion());
+            System.out.println("                 |__/           " + FastJsonVersion.getInstance().getVersion());
             // System.err.println("starter for fastJson-----fastJson init success.");
         }
         FastJsonHttpMessageConverter fastConverter = new FastJsonHttpMessageConverter();
