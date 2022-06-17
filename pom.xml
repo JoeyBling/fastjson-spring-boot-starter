@@ -20,7 +20,7 @@
         <version.java>1.7</version.java>
         <!--<version.fastjson>1.2.15</version.fastjson>-->
         <!-- FastJson 1.2.60 以下版本 有重大漏洞 -->
-        <version.fastjson>1.2.60</version.fastjson>
+        <version.fastjson>1.2.83</version.fastjson>
         <version.lombok>1.16.18</version.lombok>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.locales>zh_CN</project.build.locales>
